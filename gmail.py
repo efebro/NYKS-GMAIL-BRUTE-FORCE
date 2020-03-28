@@ -5,7 +5,7 @@ import smtplib
 from os import system
 
 def main():
-   print '================================================='
+   print '=============NYKS==KİNG-WT========================'
 main()
 print '[1] Gmail'
 print '[2] exit'
