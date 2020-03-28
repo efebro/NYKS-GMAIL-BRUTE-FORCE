@@ -41,5 +41,5 @@ def login():
 
             break
          else:
-            print '[!] şifre okundu => ' + password
+            print '[!] password not found => ' + password
 login()
